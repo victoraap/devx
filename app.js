@@ -87,5 +87,6 @@ bot.start((ctx) => {
 bot.launch({
   webhook: {
     domain: 'https://dizzy-pear-ray.cyclic.app/',
+    port: 3000
   }
 });
