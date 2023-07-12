@@ -84,9 +84,4 @@ bot.start((ctx) => {
   ctx.reply('¡Hola! Soy un bot de Telegram.');
 });
 
-bot.launch({
-  webhook: {
-    domain: 'https://dizzy-pear-ray.cyclic.app/',
-    port: 3000
-  }
-});
+bot.launch();
