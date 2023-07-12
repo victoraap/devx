@@ -84,7 +84,7 @@ bot.start((ctx) => {
 
 bot.launch({
   webhook: {
-    domain: 'https://calm-rose-bass-wrap.cyclic.app/',
+    domain: 'https://dizzy-pear-ray.cyclic.app/',
     port: 3000
   }
 });
