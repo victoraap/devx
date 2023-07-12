@@ -78,6 +78,8 @@ bot.hears(/\/dni|\.dni/, async (ctx)=> {
   }
 });
 
+//reasons
+
 bot.start((ctx) => {
   ctx.reply('¡Hola! Soy un bot de Telegram.');
 });
