@@ -35,8 +35,8 @@ async function obtenerFechaNacimientoYEdad(dni, ctx) {
 
       return { fechaNacimiento: fechaNacimientoStr, edad };
     } else {
-      ctx.reply('No se encontró la fecha de nacimiento.');
-      return null;
+      // Cambia el mensaje de "No se encontró la fecha de nacimiento" al campo "Fecha Nacimiento"
+      return { fechaNacimiento: "No encontrado", edad: null };
     }
   } catch (error) {
     console.error(error);
@@ -44,6 +44,7 @@ async function obtenerFechaNacimientoYEdad(dni, ctx) {
     return null;
   }
 }
+
 
 bot.hears(/\/dni|\.dni/, async (ctx) => {
   const args = ctx.message.text.split(' ');
